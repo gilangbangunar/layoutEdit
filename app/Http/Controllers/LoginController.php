@@ -30,12 +30,10 @@ class LoginController extends Controller
         );
         
         if($user->akses == 1){
-            return redirect('/home');
+            return redirect('/home/1');
         }else if($user->akses == 2){
-            return redirect('/home');
-        }else if($user->akses == 3){
-            return redirect('/dashboard_Hr');
-        };
+            return redirect('/home/2');
+        }
     }
     
 

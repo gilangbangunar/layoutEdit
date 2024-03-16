@@ -81,7 +81,7 @@
                                         <td style="width:20%">
                                             {{ $d->title }}
                                         </td>
-                                        <td style="width:20%"><img width="70%" src="{{ $d->img}}" alt=""> </td>
+                                        <td style="width:20%"><img style="border-radius:10px;" width="70%" src="{{ asset($d->img)}}" alt=""> </td>
                                         <td style="width:20%">{{ (strlen($d->deskripsi)>20) ? substr($d->deskripsi,0,20).' ...' : $d->deskripsi}} </td>
                                         <td class="text-center">
                                             @if($d->status == 1)
@@ -99,7 +99,7 @@
                                 </tbody>
                             </table>
                             <div class="card-body border-top">
-                            <a href="{{'/form_ajukan_cuti'}}" class="btn btn-brand btn-block">Tambah Slider</a>
+                            <a href="{{'/tambahfile/1'}}" class="btn btn-brand btn-block">Tambah Slider</a>
                         </div>
 
                         </div>

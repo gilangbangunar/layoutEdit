@@ -11,6 +11,7 @@ class slider extends Model
     protected $table = 'tb_slider';
     
     protected $fillable = [
+        'title',
         'img',
         'deskripsi',
         'status'

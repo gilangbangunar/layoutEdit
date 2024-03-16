@@ -17,8 +17,10 @@ use App\Http\Controllers\DashboardController;
 */
 
 Route::get('/', [SliderController::class, 'index']);
-Route::get('/admin/login', function (){
-    return view('login');
+Route::get('/login', function (){
+    return view('admin/login');
 });
 Route::post('/auth', [LoginController::class, 'auth']);
-Route::get('/home', [DashboardController::class, 'index']);
+Route::get('/home/{id}', [DashboardController::class, 'slider']);
+Route::get('/tambahfile/{identity}', [DashboardController::class, 'tambah']);
+// Route::get('/home', [DashboardController::class, 'index']);
