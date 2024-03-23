@@ -5,13 +5,13 @@
         <div class="card">
             <h5 class="card-header">Pengajuan Cuti</h5>
             <div class="card-body">
-                <form id="form" data-parsley-validate="" novalidate="" action="{{ '/inputCuti' }}" method="POST">
+                <form id="form" data-parsley-validate="" novalidate="" action="{{'/slider_proses'}}" method="POST" enctype="multipart/form-data">
                 @csrf
-                @foreach ($inpdata as $item)
+                @foreach ($inpdata['name'] as $key => $name)
                     <div class="form-group row">
-                        <label for="inputPassword2" class="col-3 col-lg-3 col-form-label text-right">{{$item->name}}</label>
+                        <label for="inputPassword2" class="col-3 col-lg-3 col-form-label text-right">{{ $name }}</label>
                         <div class="col-9 col-lg-9">
-                            <input name="tanggal_mulai_cuti" id="tanggal_mulai_cuti" type="date" required="" placeholder="Tanggal Mulai Cuti" class="form-control" required>
+                            <input type="{{ $inpdata['type'][$key] }}" name="{{$name}}" id="{{$name}}" type="date" required="" placeholder="Masukan {{$name}}" class="form-control" required>
                         </div>
                     </div>
                 @endforeach

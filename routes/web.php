@@ -23,4 +23,5 @@ Route::get('/login', function (){
 Route::post('/auth', [LoginController::class, 'auth']);
 Route::get('/home/{id}', [DashboardController::class, 'slider']);
 Route::get('/tambahfile/{identity}', [DashboardController::class, 'tambah']);
+Route::post('/slider_proses', [DashboardController::class, 'slider_proses']);
 // Route::get('/home', [DashboardController::class, 'index']);

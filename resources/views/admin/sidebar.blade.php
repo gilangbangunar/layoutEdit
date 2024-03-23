@@ -1,4 +1,4 @@
-<div class="nav-left-sidebar sidebar-light">
+<div class="nav-left-sidebar sidebar-dark">
             <div class="menu-list">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
@@ -19,22 +19,22 @@
                                 <div id="submenu-2" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="">Slider</a>
+                                            <a class="nav-link" href="{{'1'}}">Slider</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="{{'home/1'}}">Service</a>
+                                            <a class="nav-link" href="{{'2'}}">Service</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="dashboard_reject">Feature</a>
+                                            <a class="nav-link" href="{{'3'}}">Feature</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="dashboard_reject">Gelleri</a>
+                                            <a class="nav-link" href="{{'4'}}">Gelleri</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="dashboard_reject">Menubar</a>
+                                            <a class="nav-link" href="{{'5'}}">Menubar</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="dashboard_reject">Testimoni</a>
+                                            <a class="nav-link" href="{{'6'}}">Testimoni</a>
                                         </li>
                                     </ul>
                                 </div>
