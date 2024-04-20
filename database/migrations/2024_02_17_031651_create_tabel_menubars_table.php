@@ -11,8 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tabel_menubars', function (Blueprint $table) {
-            $table->id();
+        Schema::create('tb_menubar', function (Blueprint $table) {
+            $table->id('id_menu');
+            $table->string('menu');
+            $table->integer('parent');
+            $table->integer('sort');
+            $table->string('deskripsi');
+            $table->integer('is_parent');
+            $table->string('href');
             $table->timestamps();
         });
     }
@@ -22,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tabel_menubars');
+        Schema::dropIfExists('tb_menubar');
     }
 };
